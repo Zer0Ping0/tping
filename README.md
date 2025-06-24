@@ -1,6 +1,4 @@
-==============================
        ⚡ TCP Pinger
-==============================
 
 A fast and lightweight TCP ping tool to check if a host:port is open.
 
