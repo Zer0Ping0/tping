@@ -21,7 +21,7 @@ def tcp_ping(host, port, count=100, timeout=100):
             duration = (end - start) * 1000
             print(f"{GREEN}Connected To: {host}:{port} - time={duration:.2f}ms{RESET}")
         except socket.timeout:
-            print(f"{RED}Booted Offline AHAHAHA ({host}:{port}){RESET}")
+            print(f"{RED}Connection Timed Out: ({host}:{port}){RESET}")
         except Exception as e:
             print(f"{RED}Error connecting to {host}:{port} - {e}{RESET}")
         finally:
